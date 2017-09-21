@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS flashcards;
+CREATE DATABASE flashcards;
+
+DROP TABLE IF EXISTS cards;
+CREATE TABLE cards (
+  id SERIAL PRIMARY KEY,
+  question VARCHAR ( 255 ) NOT NULL,
+  answer VARCHAR ( 255 ) NOT NULL,
+  category_id INTEGER REFERENCES categories (id) NOT NULL
+);
+
+DROP TABLE IF EXISTS categories;
+CREATE TABLE categories (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR ( 255 ) NOT NULL,
+);
