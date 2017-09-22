@@ -1,0 +1,12 @@
+questions,answers,category_id
+SQL Server tables have two main components what are they?,columns and rows,1
+What are the names of the four 'basic' SQL data commands?,Insert - Select - Update - Delete,1
+What does the Select command do?,Select gets data from one or more tables in a database.,1
+What does the Insert command do?,Insert adds a new record to a table.,1
+What does a Select Where command do?,It allows you to specify what data you want to get from the database.,1
+How do you get all the records from a table named VendorName?,Select * From VendorName,1
+How do you delete a table?,DROP TABLE table_name,1
+What is a more technical or proper name for a row in a table?,Record.,1
+What does the Update command do?,Update changes existing data in a record.,1
+How to add a new column to a table?,ALTER TABLE celebs ADD COLUMN twitter_handle TEXT;,1
+Hot to select unique values fron a table?,SELECT DISTINCT genre FROM movies;,1

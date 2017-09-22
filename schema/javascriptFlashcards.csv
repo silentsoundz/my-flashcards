@@ -1,0 +1,13 @@
+Question,Answer,category_id
+How are blocks of code in Javascript delineated?,{},2
+AND and OR in javascript ,&& ||,2
+"
+The ""+="" assignment operator can be used to combine strings as well as numbers.",true ,2
+"Data types that can be assigned only a single value, such as an integer, or Boolean value, are called __________ types.",primitive,2
+The variable __________ determines where a variable can be referenced or used within a program.,scope,2
+Who invented JavaScript ?,Brendan Eich,2
+In what year and what browser did JavaScript first appear ?,1995,2
+JavaScript can be placed in which part(s) of an HTML document ?,The <head> or the <body> section.,2
+What are the string regular expression methods?,match(); search(); replace(); split();,2
+var s = String;   typeof s will be what?,function,2
+var s = new String();  typeof s will be what?,object,2
