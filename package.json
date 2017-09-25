@@ -2,17 +2,24 @@
   "name": "my-flashcards",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "pg-promise": "^6.9.0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
   "scripts": {
+    "db:init": "dropdb flashcards; createdb flashcards; psql flashcards < ./schema/schema.sql; psql flashcards < ./schema/load-data.sql",
+    "seedData": "psql flashcards < ./schema/load-data.sql",
+    "createdb": "createdb flashcards",
+    "dropdb": "dropdb flashcards",
+    "createtables": "psql flashcards < ./schema/schema.sql",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.1",
-    "express": "^4.15.4",
-    "nodemon": "^1.12.1",
-    "pg-promise": "^6.8.0"
-  }
+  "license": "ISC"
 }
