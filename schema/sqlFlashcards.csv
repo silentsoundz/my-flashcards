@@ -1,4 +1,4 @@
-questions,answers,category_id
+questions,answers,category_id 
 SQL Server tables have two main components what are they?,columns and rows,1
 What are the names of the four 'basic' SQL data commands?,Insert - Select - Update - Delete,1
 What does the Select command do?,Select gets data from one or more tables in a database.,1

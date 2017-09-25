@@ -6,12 +6,13 @@
   "dependencies": {
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
-    "pg-promise": "^6.9.0"
+    "pg-promise": "^6.9.0",
+    "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {},
   "scripts": {
-    "db:init":"dropdb flashcards; createdb flashcards; psql flashcards < ./schema/schema.sql; psql flashcards < ./schema/load-data.sql",
-    "seedData":"psql flashcards < ./schema/load-data.sql",
+    "db:init": "dropdb flashcards; createdb flashcards; psql flashcards < ./schema/schema.sql; psql flashcards < ./schema/load-data.sql",
+    "seedData": "psql flashcards < ./schema/load-data.sql",
     "createdb": "createdb flashcards",
     "dropdb": "dropdb flashcards",
     "createtables": "psql flashcards < ./schema/schema.sql",
