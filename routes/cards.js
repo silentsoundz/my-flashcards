@@ -7,17 +7,13 @@ router.get('/', (request, response) => {
   response.render('index')
 })
 
-router.get('/cards/category/:category_id', (request, response) => {
+router.get('/cards/category/:category_id', (request, response, next) => {
   const category_id = request.params.category_id
-  console.log(category_id);
   getCards(category_id)
     .then(cards => {
-      response.status(200)
-      response.render('play', cards)
+      response.render('play', {cards})
     })
-    .catch(error => {
-      response.status(500)
-    })
+    .catch(next)
 })
 
 
